@@ -4,18 +4,14 @@ import random
 
 r = range(1499, 2701)
 a = []
-f = []
 
 for x in r: 
     d = x % 7
-    if d == 0:
+    m = x % 5
+    if d == 0 and m == 0:
         a.append(x)
-for n in a:
-    m = n % 5
-    if m == 0: 
-        f.append(n)
 
-print(f)
+print(a)
 
 #2
 celsius = 60
