@@ -1,4 +1,9 @@
 #2
+order = [34587, 98762, 77226, 88112] 
+title = ["Learning Python, Mark Lutz", "Programming Python, Mark Lutz", "Head First Python, Paul Barry", "Einführung in Python3, Bernd Klein"]	
+quantity = [4, 5, 3, 3]
+price = [40.95, 56.80, 32.95, 24.99]
+
 def accRout(o, p, q, t):
     t1 = (o, p, q, t)
     x = lambda q : q + 10
@@ -11,5 +16,5 @@ def accRout(o, p, q, t):
         print(t1 , t2)
 
     
-accRout(1200, 40.00, 4, "Gerst")
+print(list(map(accRout, order, price, quantity, price)))
 
