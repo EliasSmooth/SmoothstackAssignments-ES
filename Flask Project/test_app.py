@@ -1,7 +1,6 @@
 import email
 from urllib import response
 from flask import Flask
-import sqlalchemy
 from website import create_app
 import unittest
 from website import create_app, db
